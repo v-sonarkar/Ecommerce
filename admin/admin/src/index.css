@@ -1,0 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+
+body{
+  font-family: "Outfit", sans-serif;
+}
+
+select,input,textarea{
+    border: 1px solid #c2c2c2;
+    outline-color: #C586A5;
+    border-radius: 4px;
+}
+
+.active{
+  /* since it is a class used in react router for active links */
+    background-color: #ffebf5;
+    border-color: #C586A5;
+}
