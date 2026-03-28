@@ -16,10 +16,39 @@ Monorepo for a full-stack ecommerce application with three parts:
 
 ```text
 Ecommerce/
-├── backend/
-├── frontend/
+├── backend/         # Express.js API server
+│   ├── config/      # Database and Cloudinary config
+│   ├── controllers/ # Route handler logic (user, product, cart, order)
+│   ├── middleware/  # Auth, file upload, and request middleware
+│   ├── models/      # Mongoose models (User, Product, Order)
+│   ├── routes/      # Express route definitions
+│   ├── uploads/     # Uploaded product images
+│   ├── package.json # Backend dependencies and scripts
+│   └── server.js    # API entry point
+│
+├── frontend/        # Customer-facing React app
+│   ├── public/      # Static assets
+│   ├── src/
+│   │   ├── assets/      # Images, icons, etc.
+│   │   ├── components/  # Reusable UI components
+│   │   ├── context/     # React context providers
+│   │   ├── pages/       # Route-based pages
+│   │   ├── App.jsx      # Main app component
+│   │   └── main.jsx     # Entry point
+│   ├── package.json     # Frontend dependencies and scripts
+│   └── index.html       # HTML template
+│
 └── admin/
-    └── admin/
+    └── admin/       # Admin dashboard React app
+        ├── public/      # Static assets
+        ├── src/
+        │   ├── assets/      # Images, icons, etc.
+        │   ├── Components/  # Admin UI components
+        │   ├── Pages/       # Admin pages (products, orders, login)
+        │   ├── App.jsx      # Main admin app component
+        │   └── main.jsx     # Entry point
+        ├── package.json     # Admin dependencies and scripts
+        └── index.html       # HTML template
 ```
 
 ## Prerequisites
